@@ -86,10 +86,7 @@
                     text: del,
                     icon: 'info',
                 })}
-            
-		//masculin feminin 
-	
-		
+            		
 		
 
 
@@ -130,6 +127,36 @@ function bye() {
 		});
 }
 
+//delete book confirmation
+function deleteBook(a){
+		a.target
+		var value = a.getAttribute('data-value');
+		swal({
+		title: "Êtes vous sûrs?",
+		text: "",
+		icon: "warning",
+		buttons: true,
+		dangerMode: true,
+		})
+		.then((willDelete) => {
+		if (willDelete) {
+			window.location="php/deleteL.php?idl="+value
+		} else {
+			swal({
+			title: "opperation annulée"});
+		}
+		});
+        
+}
+//sugested code to delete user
+
+// window.onload = function() {
+//   document.querySelector('#delEtudiant').addEventListener('submit', function(event) {
+//     if (!confirm('Are you sure you want to submit the form?')) {
+//       event.preventDefault();
+//     }
+//   });
+// };
 	</script>
 	
 
@@ -808,7 +835,7 @@ function bye() {
 						 			else echo "<span class='status completed'>dispo</span>"; ?>
 								</td>
 								<td WIDTH="2%"><a href="livre\modifL.php?id=<?php echo $donnees['id_livre']; ?>"> <img src="img\update.png" alt="modify" style="width:40px"></a></td>
-								<td WIDTH="4%" style="text-align: center;"><a href="php\deleteL.php?idl=<?php echo $donnees['id_livre']; ?>"><img src="img\del.png"alt="delete" style="width:40px"></a></td>
+								<td WIDTH="4%" style="text-align: center;"><a href="#" data-value="<?php echo $donnees['id_livre']; ?>" onclick="deleteBook(this)" ><img src="img\del.png"alt="delete" style="width:40px"></a></td>
 								<!-- <td><input type="checkbox" name="check[]" value="<?php echo $donnees['NCE']; ?>" ></td> -->
 							</tr>
 							<?php
