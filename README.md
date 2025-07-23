@@ -1,6 +1,10 @@
 # Bookly - Online Library Management System
 
-![Bookly Logo](img/profile.png)
+<div align="center">
+  <img src="img/overview1.png" alt="Bookly Overview 1" width="32%">
+  <img src="img/overview2.png" alt="Bookly Overview 2" width="32%">
+  <img src="img/overview3.png" alt="Bookly Overview 3" width="32%">
+</div>
 
 ## 📚 Overview
 
