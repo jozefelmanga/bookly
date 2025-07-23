@@ -4,7 +4,7 @@
 
 ## 📚 Overview
 
-Bookly is a modern, responsive online library management system designed to help academic institutions efficiently manage their book inventory and student borrowing processes. The application provides separate interfaces for students and administrators, with features for browsing books, managing borrowing, and keeping track of inventory.
+Bookly is a modern, responsive online library management system designed to help academic institutions efficiently manage their book inventory and student borrowing processes. Originally developed as a university project, this application provides separate interfaces for students and administrators, with features for browsing books, managing borrowing, and keeping track of inventory.
 
 ## ✨ Features
 
@@ -97,6 +97,8 @@ bookly/
    - Student access: Register a new account or use an existing student ID
 
 ## 💻 Usage
+
+📘 [Step-by-Step User Guide](bookly.pdf)
 
 ### Student Flow
 1. Visit the landing page and log in with your student ID
